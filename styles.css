@@ -85,16 +85,7 @@ img {
 .white-button:focus-visible {
   box-shadow: none;
 }
-
-.sr-only {
-  position: absolute;
-  z-index: -100;
-  width: 1px; /* width나 height 중에 하나라도 0으로 주면 display: none 처럼 스크린 리더가 읽어주지 않아서 1px로 설정 */
-  height: 1px;
-  overflow: hidden; /* 1x1을 벗어난 영역 자르기 */
-  opacity: 0; /* 투명도를 0으로 */
-}
-
+/* 입력 바 '|' 제거, 마우스 드래그 방지*/
 .no-drag {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
@@ -115,78 +106,18 @@ img {
   color: #76ba99;
 }
 
-.bgChange {
-  animation: bgChangeEffect 400ms 2 alternate;
-}
-
-.blink {
-  animation: blinkingEffect 200ms 5 alternate;
-}
-
 .vibration {
   animation: vibrationEffect 100ms infinite;
 }
 
-.zoom {
-  animation: zoomEffect 500ms 2 alternate;
-}
-
-@keyframes zoomEffect {
-  to {
-    font-size: 18px;
-    font-weight: 700;
-  }
-}
-
-@keyframes bgChangeEffect {
-  from {
-    background-color: #fff;
-  }
-
-  to {
-    background-color: #dea5a4;
-  }
-}
-
-@keyframes blinkingEffect {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes movingEffect {
-  from {
-    top: 50%;
-  }
-
-  to {
-    top: 45%;
-  }
-}
-
 @keyframes vibrationEffect {
   from {
-    left: 0;
+    top: 0;
+    right: 0;
   }
 
   to {
     left: 2px;
+    bottom: 2px;
   }
-}
-
-/* Tablet */
-@media screen and (min-width: 768px) {
-  @keyframes zoomEffect {
-    to {
-      font-size: 22px;
-    }
-  }
-}
-
-/* Desktop */
-@media screen and (min-width: 1024px) {
 }

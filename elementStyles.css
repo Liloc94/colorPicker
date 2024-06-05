@@ -69,15 +69,6 @@
   background-size: contain;
 }
 
-.menu__nav-time::before {
-  margin-right: 3px;
-  background-image: url("./../img/common/time.png");
-}
-
-.menu__nav-home--button {
-  background-image: url("./../img/common/home.png");
-}
-
 .game {
   display: flex;
   justify-content: center;
