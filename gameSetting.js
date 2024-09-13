@@ -194,10 +194,10 @@ function showGameResult() {
     resultText = "최소 몽골족";
   } else if (stage > 20 && stage <= 25) {
     resultText = "인간 채도판별기<br/>지렸다~!";
-  } else if (stage > 26 && stage <= 30) {
-    resultText = "이게 절대색감인가<br/>뭔가 그거냐?";
+  } else if (stage > 25 && stage <= 30) {
+    resultText = "이게 절대색감 인가<br/>뭔가 그거냐?";
   } else if (stage > 30) {
-    resultText = "이건 콘솔 안보고 절대 못깸.. 콘솔봤지??";
+    resultText = "축하합니다 ??";
   }
 
   modalTitle.innerHTML = `
